@@ -5,8 +5,10 @@
 
 你可能一直再用这两个处理器，但是可能不知道他们的作用？
 
-css-loader：用于处理JS中import进来的css
+```
+css-loader：用于处理JS中import进来的css   
 style-loader：创建style标签并把前面处理过的Css添加到页面head里面
+```
 
 ## 配置处理器到module中
 ```
