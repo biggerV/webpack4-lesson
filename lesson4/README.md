@@ -7,7 +7,7 @@ webpack的配置中plugins选项让你可以添加插件帮助处理打包后各
 此插件也是必备的，用于帮助我们把打包后的资源自动插入到页面模板中，避免了简单的重复劳动。see
 [github文档](https://github.com/jantimon/html-webpack-plugin#configuration)
 
-## 配置处理器
+## 配置插件
 ```
 {
   entry: {
@@ -36,3 +36,24 @@ webpack的配置中plugins选项让你可以添加插件帮助处理打包后各
 `hash`设置为true意味着我们每次打包后插入页面的资源都会自动带上哈希值，以刷确保浏览器访问的时候是最新的文件，而不是缓存。
 
 更多用法后面逐步加入。
+
+## clean-webpack-plugin 清除dist目录
+
+事实上，dist目录如果一直不做清除意味着垃圾文件可能不断增长。这个插件来帮忙了。
+
+```
+plugins: [
+  new CleanWebpackPlugin()
+  ...
+]
+```
+
+0配置的插件使用体验非常好，插件会自动清除output配置下的path指向的目录，也就是dist目录，这样我们就能得到一个干净的产品。
+
+要注意的是，webpack官方文档的指南用例已经过期了，新的插件按照他的方式使用将会报错，无法使用哟。因为引入插件要这样：
+
+`const { CleanWebpackPlugin } = require('clean-webpack-plugin')` 
+
+而不是
+
+const CleanWebpackPlugin = require('clean-webpack-plugin')

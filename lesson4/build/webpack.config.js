@@ -1,5 +1,6 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
   // mode 模式不设置的话默认是production，会压缩优化代码，development不压缩但会优化代码，none不压缩不优化
@@ -27,6 +28,7 @@ module.exports = {
     ]
   },
   plugins: [
+    new CleanWebpackPlugin(), // 0配置，插件会自动清除output配置下的path指向的目录
     new HtmlWebpackPlugin({
       title: 'lesson 4 - html-webpack-plugin',
       template: path.resolve(__dirname, '../src/index.html'),
