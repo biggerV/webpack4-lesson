@@ -1,0 +1,7 @@
+.red {
+  color: blue;
+  background: url(~@/assets/avatar.jpg);
+  padding: 50px;
+  display: block;
+  margin: 20px;
+}
