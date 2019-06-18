@@ -81,4 +81,6 @@ sideEffects: false
 
 但是如果不写这个配置，我想这将由压缩工具的默认行为进行处理，通常压缩功能能很好的处理这些问题。
 
-`所以，要么不写，要么写全！！！`
+---
+
+另外，如果你的项目都是符合ES2015模块定义的，那么就可以直接设置sideEffects: false了，因为没有任何有副作用的模块存在。比如Vue项目的配置中就是这样配置的 [Vue package.json](https://github.com/vuejs/vue/blob/dev/package.json#L15)
