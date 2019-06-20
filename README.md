@@ -9,13 +9,13 @@ Let's learn how to use webpack4
 
 # 目录
 
-+ [lesson 1 : webpack基本用法](tree/master/lesson1)
-+ [lesson 2 : webpack模块module配置样式处理器](tree/master/lesson2)
-+ [lesson 3 : webpack处理图片资源](tree/master/lesson3)
-+ [lesson 4 : webpack插件自动添加打包后的资源到页面模板](tree/master/lesson4)
-+ [lesson 5 : 使用 source map 快速调试代码](tree/master/lesson5)
-+ [lesson 6 : webpack-dev-server 本地开发服务器](tree/master/lesson6)
-+ [lesson 7 : 模块热更新](tree/master/lesson7)
-+ [lesson 8 : tree shaking](tree/master/lesson8)
-+ [lesson 9 : 多环境配置](tree/master/lesson9)
-+ [lesson 10 : 小结与回顾](tree/master/lesson10)
++ [lesson 1 : webpack基本用法](https://github.com/biggerV/webpack-lesson/tree/master/lesson1)
++ [lesson 2 : webpack模块module配置样式处理器](https://github.com/biggerV/webpack-lesson/tree/master/lesson2)
++ [lesson 3 : webpack处理图片资源](https://github.com/biggerV/webpack-lesson/tree/master/lesson3)
++ [lesson 4 : webpack插件自动添加打包后的资源到页面模板](https://github.com/biggerV/webpack-lesson/tree/master/lesson4)
++ [lesson 5 : 使用 source map 快速调试代码](https://github.com/biggerV/webpack-lesson/tree/master/lesson5)
++ [lesson 6 : webpack-dev-server 本地开发服务器](https://github.com/biggerV/webpack-lesson/tree/master/lesson6)
++ [lesson 7 : 模块热更新](https://github.com/biggerV/webpack-lesson/tree/master/lesson7)
++ [lesson 8 : tree shaking](https://github.com/biggerV/webpack-lesson/tree/master/lesson8)
++ [lesson 9 : 多环境配置](https://github.com/biggerV/webpack-lesson/tree/master/lesson9)
++ [lesson 10 : 小结与回顾](https://github.com/biggerV/webpack-lesson/tree/master/lesson10)
