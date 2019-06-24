@@ -5,3 +5,13 @@ export function hello() {
 export function world() {
   alert("world")
 }
+
+export class TestClass {
+  constructor() {
+
+  }
+
+  test() {
+    alert("hi! test class!")
+  }
+}
