@@ -19,3 +19,4 @@ Let's learn how to use webpack4
 + [lesson 8 : tree shaking](https://github.com/biggerV/webpack-lesson/tree/master/lesson8)
 + [lesson 9 : 多环境配置](https://github.com/biggerV/webpack-lesson/tree/master/lesson9)
 + [lesson 10 : 小结与回顾](https://github.com/biggerV/webpack-lesson/tree/master/lesson10)
++ [lesson 11 : 抽取CSS样式为单独文件并压缩](https://github.com/biggerV/webpack-lesson/tree/master/lesson11)
