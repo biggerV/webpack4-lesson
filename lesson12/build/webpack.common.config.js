@@ -34,6 +34,17 @@ module.exports = {
             },
           },
           'css-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              ident: 'postcss',
+              plugins: [
+                require('autoprefixer')({
+                  overrideBrowserslist: ['Chrome > 10', 'Firefox > 20', 'Safari >= 6', 'ie > 8']
+                })
+              ]
+            }
+          },
           'less-loader'
         ]
       },
