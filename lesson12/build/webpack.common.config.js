@@ -18,6 +18,8 @@ module.exports = {
     filename: '[name].bundle.js'
   },
   module: {
+    // rules加入的处理模块顺序绝对不能搞错，否则无法运行！
+    // 遵循的是left out，右进左出：数组下标越低则越接近最终结果
     rules: [
       {
         test: /\.(le|c)ss$/,
@@ -33,18 +35,27 @@ module.exports = {
               reloadAll: true
             },
           },
+          // 把CSS编译成commonJS模块
           'css-loader',
           {
+            // postcss的功能真的太强大了，它基本是前端项目的必备CSS预处理模块
+            // 但这里只用到了它最简单的功能，对于它我们后面也许会深入的探索*
             loader: 'postcss-loader',
             options: {
               ident: 'postcss',
               plugins: [
+                // 添加厂商样式前缀插件
+                // 我只想要添加前缀，暂还不需要用到postcss的其他功能，但因为这个插件是应用最广泛的postcss插件，所以我才安装postcss-loader
                 require('autoprefixer')({
-                  overrideBrowserslist: ['Chrome > 10', 'Firefox > 20', 'Safari >= 6', 'ie > 8']
+                  // browserslist 根据can i use网站的数据作为规则进行添加厂商前缀
+                  // 它可以根据浏览器使用率、覆盖率、版本范围、发布时间等规则进行设置，真的太强大了
+                  // https://github.com/browserslist/browserslist#full-list
+                  overrideBrowserslist: ['Chrome > 20', 'Firefox > 20', 'Safari >= 6', 'ie > 8']
                 })
               ]
             }
           },
+          // 把less编译成CSS
           'less-loader'
         ]
       },
