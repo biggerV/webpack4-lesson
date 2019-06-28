@@ -38,14 +38,13 @@ module.exports = {
           // 把CSS编译成commonJS模块
           'css-loader',
           {
-            // postcss的功能真的太强大了，它基本是前端项目的必备CSS预处理模块
+            // postcss依靠各种插件处理CSS，它基本是前端项目的必备CSS预处理模块
             // 但这里只用到了它最简单的功能，对于它我们后面也许会深入的探索*
             loader: 'postcss-loader',
             options: {
               ident: 'postcss',
               plugins: [
                 // 添加厂商样式前缀插件
-                // 我只想要添加前缀，暂还不需要用到postcss的其他功能，但因为这个插件是应用最广泛的postcss插件，所以我才安装postcss-loader
                 require('autoprefixer')({
                   // browserslist 根据can i use网站的数据作为规则进行添加厂商前缀
                   // 它可以根据浏览器使用率、覆盖率、版本范围、发布时间等规则进行设置，真的太强大了
