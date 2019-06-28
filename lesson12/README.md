@@ -50,12 +50,8 @@ less-loader把less编译为css后，就进入了postcss-loader的处理
 
 ------
 
-它们都是loader，使用也非常简单，但是注意这里把`package.json`里面的`sideEffects`选项删除了
+它们都是loader，使用也非常简单，但是注意要把`package.json`里面的`sideEffects`选项添加上*.less适配
 
-起初我应用less时，打包后less文件内写的内容都被删除了，无法打包进去，这个折腾了我大概2个小时，找不到原因
+起初我应用less时，打包后less文件内写的内容都被删除了，无法打包进去，后来我意识到，是sideEffects里面没有配置less为副作用文件，所以他被webpack认为无用而被标记并被压缩工具删除了。
 
-后来我意识到，是sideEffects里面没有配置less为副作用文件，所以他被webpack认为无用而被标记并被压缩工具删除了
-
-所以，我删除了这个配置选项，事实上webpack的确处理的很好，现在我不用担心这个`误删除`问题了。
-
-
+我得记得这个配置吖！

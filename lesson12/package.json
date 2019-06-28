@@ -9,6 +9,11 @@
   },
   "author": "V",
   "license": "ISC",
+  "sideEffects": [
+    "*.css",
+    "*.less",
+    "./src/pollyfill.js"
+  ],
   "devDependencies": {
     "autoprefixer": "^9.6.0",
     "clean-webpack-plugin": "^3.0.0",
