@@ -1,5 +1,5 @@
-import "core-js/stable";
-import "regenerator-runtime/runtime";
+import "core-js/stable"; // 提供垫片 polyfill
+import "regenerator-runtime/runtime"; // 提供 async https://github.com/facebook/regenerator/tree/master/packages/regenerator-runtime
 import './styles/style.less'
 import './styles/style2.css'
 import avaterUrl from '@/assets/avatar.jpg'
@@ -47,15 +47,21 @@ const sayWhat = (param) => {
   })
 }
 
-sayWhat(true)
-  .then(res => {
-    alert(res)
-  })
-  .catch(err => {
-    alert(err)
-  })
+// sayWhat(true)
+//   .then(res => {
+//     alert(res)
+//   })
+//   .catch(err => {
+//     alert(err)
+//   })
 
+async function hiAsync() {
+  const what = await sayWhat(true)
+  alert(what)
+  alert("hi, async")
+}
 
+hiAsync()
 
 
 // 必须加上这段，否则会刷新页面

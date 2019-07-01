@@ -21,3 +21,4 @@ Let's learn how to use webpack4
 + [lesson 10 : 小结与回顾](https://github.com/biggerV/webpack-lesson/tree/master/lesson10)
 + [lesson 11 : 抽取CSS样式为单独文件并压缩](https://github.com/biggerV/webpack-lesson/tree/master/lesson11)
 + [lesson 12 : 应用样式预编译器less、postcss](https://github.com/biggerV/webpack-lesson/tree/master/lesson12)
++ [lesson 13 : 应用babel转换JS代码及添加polyfill](https://github.com/biggerV/webpack-lesson/tree/master/lesson13)

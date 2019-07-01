@@ -67,8 +67,10 @@ module.exports = {
               [
                 '@babel/preset-env',
                 {
-                  'useBuiltIns': 'usage', //"usage" | "entry" | false, defaults to false.
-                  'corejs': 3
+                  // useBuiltIns 垫片设置 使用内建？
+                  // 将polyfill应用于@babel/preset-env中的方法
+                  'useBuiltIns': 'entry', //"usage" | "entry" | false, defaults to false.
+                  'corejs': 3 // 使用core-js不能缺少的配置
                 }
               ]
             ],
