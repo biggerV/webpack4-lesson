@@ -22,4 +22,4 @@ Let's learn how to use webpack4
 + [lesson 11 : 抽取CSS样式为单独文件并压缩](https://github.com/biggerV/webpack-lesson/tree/master/lesson11)
 + [lesson 12 : 应用样式预编译器less、postcss](https://github.com/biggerV/webpack-lesson/tree/master/lesson12)
 + [lesson 13 : 应用babel转换JS代码及添加polyfill](https://github.com/biggerV/webpack-lesson/tree/master/lesson13)
-+ [lesson 14 : 公共代码提取和缓存策略](https://github.com/biggerV/webpack-lesson/tree/master/lesson14)
++ [lesson 14 : 多页面打包及公共代码提取和缓存策略](https://github.com/biggerV/webpack-lesson/tree/master/lesson14)

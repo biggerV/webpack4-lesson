@@ -1,5 +1,4 @@
 const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
@@ -11,13 +10,16 @@ const devMod = process.env.NODE_ENV === "development"
 
 module.exports = {
   entry: {
-    app: './src/index.js'
+    // 多入口
+    app: './src/index.js',
+    home: './src/home.js'
   },
   output: {
     path: path.resolve(__dirname, '../dist'),
-    // [contenthash] 用文件的哈希值可以在只有文件发生改变时才改变文件名
+    // 生产环境下 [contenthash] 用文件的哈希值可以在只有文件发生改变时才改变文件名
     // 未改变时可以在客户端缓存文件，加速加载页面
-    filename: '[name].[contenthash].js'
+    // 开发环境不要设置contenthash，否则不能热更新
+    filename: devMod ? '[name].bundle.js' : '[name].[contenthash].js'
   },
   module: {
     // rules加入的处理模块顺序绝对不能搞错，否则无法运行！
@@ -60,7 +62,7 @@ module.exports = {
         use: ["file-loader"]
       },
       {
-        test: /\.m?js$/,
+        test: /\.js$/,
         exclude: /(node_modules|bower_components)/,
         use: {
           loader: "babel-loader",
@@ -84,12 +86,7 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(), // 0配置，插件会自动清除output配置下的path指向的目录
-    new HtmlWebpackPlugin({
-      title: 'lesson 14',
-      template: path.resolve(__dirname, '../src/index.html'),
-      // 在上面的output.filename中应用了contenthash后，这里不需要再添加hash
-      // hash: true
-    }),
+
     new MiniCssExtractPlugin({
       // 注意，在下面的配置*开发环境*的文件名应该使用[name].css，不要加hash
       // 加了hash不能热更新CSS，所以只在生产环境加hash

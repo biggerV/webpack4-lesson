@@ -1,8 +1,10 @@
+const path = require('path')
 const webpackMerge = require('webpack-merge')
 const webpackCommonConfig = require('./webpack.common.config.js')
 const webpack = require("webpack")
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin")
 const TerserWebpackPlugin = require("terser-webpack-plugin")
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = webpackMerge(webpackCommonConfig, {
   // mode 模式不设置的话默认是production，会压缩优化代码，development不压缩但会优化代码，none不压缩不优化
@@ -18,7 +20,24 @@ module.exports = webpackMerge(webpackCommonConfig, {
       //注意，因为这个插件直接执行文本替换，给定的值必须包含字符串本身内的实际引号。
       // 通常，有两种方式来达到这个效果，使用 '"production"', 或者使用 JSON.stringify('production')。
       'process.env.NODE_ENV': JSON.stringify('production')
-    })
+    }),
+    // 多页面配置 每 new HtmlWebpackPlugin 一个为一个页面并配置
+    // filename 必须设置为不同的名称，否则会被默认的index.html覆盖
+    // chunks 指定插入的包，公共包必须要加入并放在前面
+    new HtmlWebpackPlugin({
+      title: 'lesson 14',
+      filename: 'index.html',
+      template: path.resolve(__dirname, '../src/index.html'),
+      chunks: ['runtime', 'vendor', 'app'],
+      // 生产环境在上面的output.filename中应用了contenthash后，这里不需要再添加hash
+      // hash: true
+    }),
+    new HtmlWebpackPlugin({
+      title: 'home',
+      filename: 'home.html',
+      template: path.resolve(__dirname, '../src/index.html'),
+      chunks: ['runtime', 'vendor', 'home']
+    }),
   ],
   optimization: {
     // 配置了minimizer压缩选项后，webpack不会启用内置压缩插件
@@ -43,8 +62,8 @@ module.exports = webpackMerge(webpackCommonConfig, {
     ],
     runtimeChunk: 'single', // 提取运行时代码为独立文件
     moduleIds: 'hashed', // vendor没有变化时名称上的哈希不变
-    // 把node_modules下的模块单独提取打包成一个文件
-    // 一般来说node_modules下的模块不会发生更改，这样我们就可以提取出来，客户浏览器可以缓存这个文件，加速加载
+    // 把引用node_modules下的模块单独提取打包成一个文件
+    // 一般来说node_modules下的模块不会频繁发生更改，这样我们就可以提取出来，客户浏览器可以缓存这个文件，加速加载
     // 如果还有其他目录的模块可以提取，按下面设置
     splitChunks: {
       cacheGroups: {
