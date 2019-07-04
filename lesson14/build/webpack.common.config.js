@@ -2,6 +2,10 @@ const path = require('path')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
+function resolve(dir) {
+  return path.join(__dirname, '..', dir)
+}
+
 // 注意，这里使用process.env.NODE_ENV之前，需要在package.json的scripts命令里面
 // 添加 NODE_ENV=development / production 才能获取到process.env.NODE_ENV的值
 // 否则默认在webpack的配置文件里面是获取不到的
@@ -15,7 +19,7 @@ module.exports = {
     home: './src/home.js'
   },
   output: {
-    path: path.resolve(__dirname, '../dist'),
+    path: resolve('dist'),
     // 生产环境下 [contenthash] 用文件的哈希值可以在只有文件发生改变时才改变文件名
     // 未改变时可以在客户端缓存文件，加速加载页面
     // 开发环境不要设置contenthash，否则不能热更新
@@ -64,6 +68,7 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /(node_modules|bower_components)/,
+        include: resolve('src'),
         use: {
           loader: "babel-loader",
           options: {
@@ -96,7 +101,7 @@ module.exports = {
   ],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, '../src')
+      "@": resolve('src')
     }
   }
 }
