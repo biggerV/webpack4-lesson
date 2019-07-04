@@ -1,6 +1,6 @@
 # lesson 13 : 应用babel转换JS代码及添加polyfill
 
-我们可以用ES6、ES7或更高版本写JS代码，但是它们不一定能够在不同版本浏览器运行，低版本的浏览器同样有一定的用户群，这就需要转换代码到ES5并添加垫片polyfill以适应更多版本浏览器。
+我们可以用ES6、ES7或更高版本写JS代码，但是它们不一定能够在不同版本浏览器运行，低版本的浏览器同样有一定的用户群，这就需要转换代码到ES5并添加polyfill以适应更多版本浏览器。
 
 ```
 npm install -D babel-loader @babel/core @babel/preset-env @babel/runtime @babel/plugin-transform-runtime core-js
@@ -29,7 +29,7 @@ presets: [
   [
     '@babel/preset-env',
     {
-      // useBuiltIns 垫片设置 使用内建？
+      // useBuiltIns polyfill设置 使用内建？
       // 将polyfill应用于@babel/preset-env中的方法
       'useBuiltIns': 'entry', //"usage" | "entry" | false, defaults to false.
       'corejs': 3 // 使用core-js不能缺少的配置
@@ -40,15 +40,15 @@ presets: [
 polyfill
 ```
 // polyfill 以下代码应置于入口文件顶端
-import "core-js/stable";// 提供垫片 polyfill
+import "core-js/stable";// 提供 polyfill
 import "regenerator-runtime/runtime"; // 提供 async
 ```
 
-`useBuiltIns` 可以让插件根据`browserslist`配置的浏览器列表进行打包**需要用到的**core-js提供的polyfill垫片，减少不必要的垫片代码。
+`useBuiltIns` 可以让插件根据`browserslist`配置的浏览器列表进行打包**需要用到的**core-js提供的polyfill，减少不必要的polyfill代码。
 
 **不推荐使用babel-polyfill了**！因为这个插件已经不再更新，而且它最后版本也是指向上面两行代码而已了。
 
-### 以上配置实现了自动根据`browserslist`**转换JS代码**和**加入需要的polyfill垫片**。
+### 以上配置实现了自动根据`browserslist`**转换JS代码**和**加入需要的polyfill**。
 
 
 + @babel/plugin-transform-runtime
