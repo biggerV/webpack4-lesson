@@ -13,7 +13,15 @@ module.exports = webpackMerge(webpackCommonConfig, {
   devServer: {
     contentBase: false,
     hot: true,
-    noInfo: true,
+
+    // noInfo 什么信息都不输出到控制台，不推荐
+    // noInfo: true,
+
+    // stats 可以控制什么信息输出到控制台，推荐！
+    // 配置值 errors-only、errors-warnings、minimal、none、normal、verbose 输出的信息依次增多
+    // 除了上面的预定值，还可以更细粒度的配置，详细： https://webpack.js.org/configuration/stats/
+    // stats: 'minimal',
+
     proxy: {
       '/v2': {
         target: 'https://api.douban.com', // 将本地http://localhost地址代理到此地址上
