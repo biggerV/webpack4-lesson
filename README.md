@@ -25,3 +25,4 @@ Let's learn how to use webpack4
 + [lesson 14 : 多页面打包及公共代码提取和缓存策略](https://github.com/biggerV/webpack-lesson/tree/master/lesson14)
 + [lesson 15 : 小结与回顾](https://github.com/biggerV/webpack-lesson/tree/master/lesson15)
 + [lesson 16 : 使用proxy代理模式以实现跨域API调试](https://github.com/biggerV/webpack-lesson/tree/master/lesson16)
++ [lesson 17 : gzip压缩](https://github.com/biggerV/webpack-lesson/tree/master/lesson17)
