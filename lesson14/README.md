@@ -105,6 +105,8 @@ splitChunks: {
   cacheGroups: {
     vendor: {
       test: /[\\/]node_modules[\\/]/,
+      // 你不一定非的把整个node_modules下的依赖都提取出来，也可以按需提取，如下
+      // test: /[\\/]node_modules[\\/](vue|vuex|vue-router|vue-i18n)[\\/]/,
       name: 'vendor',
       chunks: 'all'
     }

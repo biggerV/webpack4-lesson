@@ -1,4 +1,4 @@
-# lesson 17 : gzip压缩
+# lesson 17 : gzip预压缩 -> compression-webpack-plugin
 
 尽管我们采用了各种优化手段对打包文件进行优化以减少体积，但无奈地的是当由于项目不断膨胀的情况下，打包后的文件体积还是比我们想象的要大很多。
 

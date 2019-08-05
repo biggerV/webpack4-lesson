@@ -83,7 +83,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(), // 0配置，插件会自动清除output配置下的path指向的目录
     new HtmlWebpackPlugin({
-      title: 'lesson 16',
+      title: 'lesson 15',
       template: path.resolve(__dirname, '../src/index.html'),
       hash: true
     }),
