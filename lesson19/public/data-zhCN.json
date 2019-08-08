@@ -1,0 +1,113 @@
+{
+  "rating": {
+    "max": 10,
+    "average": "9.7",
+    "numRaters": 1500371,
+    "min": 0
+  },
+  "author": [
+    {
+      "name": "\u5f17\u5170\u514b\u00b7\u5fb7\u62c9\u90a6\u7279 Frank Darabont"
+    }
+  ],
+  "alt_title": "肖申克的救赎 / 月黑高飞(港)",
+  "image": "p480747492.webp",
+  "title": "The Shawshank Redemption",
+  "summary": "20世纪40年代末，小有成就的青年银行家安迪（蒂姆·罗宾斯 Tim Robbins 饰）因涉嫌杀害妻子及她的情人而锒铛入狱。在这座名为肖申克的监狱内，希望似乎虚无缥缈，终身监禁的惩罚无疑注定了安迪接下来灰暗绝望的人生。未过多久，安迪尝试接近囚犯中颇有声望的瑞德（摩根·弗里曼 Morgan Freeman 饰），请求对方帮自己搞来小锤子。以此为契机，二人逐渐熟稔，安迪也仿佛在鱼龙混杂、罪恶横生、黑白混淆的牢狱中找到属于自己的求生之道。他利用自身的专业知识，帮助监狱管理层逃税、洗黑钱，同时凭借与瑞德的交往在犯人中间也渐渐受到礼遇。表面看来，他已如瑞德那样对那堵高墙从憎恨转变为处之泰然，但是对自由的渴望仍促使他朝着心中的希望和目标前进。而关于其罪行的真相，似乎更使这一切朝前推进了一步…… 本片根据著名作家斯蒂芬·金（Stephen Edwin King）的原著改编。",
+  "attrs": {
+    "pubdate": [
+      "1994-09-10(\u591a\u4f26\u591a\u7535\u5f71\u8282)",
+      "1994-10-14(\u7f8e\u56fd)"
+    ],
+    "language": [
+      "\u82f1\u8bed"
+    ],
+    "title": [
+      "The Shawshank Redemption"
+    ],
+    "country": [
+      "\u7f8e\u56fd"
+    ],
+    "writer": [
+      "\u5f17\u5170\u514b\u00b7\u5fb7\u62c9\u90a6\u7279 Frank Darabont",
+      "\u65af\u8482\u82ac\u00b7\u91d1 Stephen King"
+    ],
+    "director": [
+      "\u5f17\u5170\u514b\u00b7\u5fb7\u62c9\u90a6\u7279 Frank Darabont"
+    ],
+    "cast": [
+      "\u8482\u59c6\u00b7\u7f57\u5bbe\u65af Tim Robbins",
+      "\u6469\u6839\u00b7\u5f17\u91cc\u66fc Morgan Freeman",
+      "\u9c8d\u52c3\u00b7\u5188\u987f Bob Gunton",
+      "\u5a01\u5ec9\u59c6\u00b7\u8d5b\u5fb7\u52d2 William Sadler",
+      "\u514b\u5170\u897f\u00b7\u5e03\u6717 Clancy Brown",
+      "\u5409\u5c14\u00b7\u8d1d\u7f57\u65af Gil Bellows",
+      "\u9a6c\u514b\u00b7\u7f57\u65af\u987f Mark Rolston",
+      "\u8a79\u59c6\u65af\u00b7\u60e0\u7279\u6469 James Whitmore",
+      "\u6770\u5f17\u91cc\u00b7\u5fb7\u66fc Jeffrey DeMunn",
+      "\u62c9\u91cc\u00b7\u5e03\u5170\u767b\u4f2f\u683c Larry Brandenburg",
+      "\u5c3c\u5c14\u00b7\u5409\u6069\u6258\u5229 Neil Giuntoli",
+      "\u5e03\u8d56\u6069\u00b7\u5229\u6bd4 Brian Libby",
+      "\u5927\u536b\u00b7\u666e\u7f57\u74e6\u5c14 David Proval",
+      "\u7ea6\u745f\u592b\u00b7\u52b3\u683c\u8bfa Joseph Ragno",
+      "\u7956\u5fb7\u00b7\u585e\u514b\u5229\u62c9 Jude Ciccolella",
+      "\u4fdd\u7f57\u00b7\u9ea6\u514b\u5170\u5c3c Paul McCrane",
+      "\u82ae\u59ae\u00b7\u5e03\u83b1\u6069 Renee Blaine",
+      "\u963f\u65b9\u7d22\u00b7\u5f17\u91cc\u66fc Alfonso Freeman",
+      "V\u00b7J\u00b7\u798f\u65af\u7279 V.J. Foster",
+      "\u5f17\u5170\u514b\u00b7\u6885\u5fb7\u62c9\u8bfa Frank Medrano",
+      "\u9a6c\u514b\u00b7\u8fc8\u5c14\u65af Mack Miles",
+      "\u5c3c\u5c14\u00b7\u8428\u9ed8\u65af Neil Summers",
+      "\u8010\u5fb7\u00b7\u5df4\u62c9\u7c73 Ned Bellamy",
+      "\u5e03\u8d56\u6069\u00b7\u6234\u62c9\u7279 Brian Delate",
+      "\u5510\u00b7\u9ea6\u514b\u9a6c\u7eb3\u65af Don McManus"
+    ],
+    "movie_duration": [
+      "142\u5206\u949f"
+    ],
+    "year": [
+      "1994"
+    ],
+    "movie_type": [
+      "\u72af\u7f6a",
+      "\u5267\u60c5"
+    ]
+  },
+  "id": "http:\/\/api.douban.com\/movie\/1292052",
+  "mobile_link": "http:\/\/m.douban.com\/movie\/subject\/1292052\/",
+  "alt": "https:\/\/movie.douban.com\/movie\/1292052",
+  "tags": [
+    {
+      "count": 274783,
+      "name": "\u7ecf\u5178"
+    },
+    {
+      "count": 247322,
+      "name": "\u52b1\u5fd7"
+    },
+    {
+      "count": 230890,
+      "name": "\u4fe1\u5ff5"
+    },
+    {
+      "count": 218508,
+      "name": "\u81ea\u7531"
+    },
+    {
+      "count": 158967,
+      "name": "\u4eba\u6027"
+    },
+    {
+      "count": 138115,
+      "name": "\u4eba\u751f"
+    },
+    {
+      "count": 137775,
+      "name": "\u7f8e\u56fd"
+    },
+    {
+      "count": 98122,
+      "name": "\u5267\u60c5"
+    }
+  ]
+}

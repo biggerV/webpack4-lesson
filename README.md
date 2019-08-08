@@ -28,8 +28,8 @@ Let's learn how to use webpack4
 + [lesson 12 : 应用样式预编译器less、postcss](https://github.com/biggerV/webpack-lesson/tree/master/lesson12)
 + [lesson 13 : 应用babel转换JS代码及添加polyfill](https://github.com/biggerV/webpack-lesson/tree/master/lesson13)
 + [lesson 14 : 多页面打包及公共代码提取和缓存策略](https://github.com/biggerV/webpack-lesson/tree/master/lesson14)
-+ [lesson 15 : 使用proxy代理模式以实现跨域API调试](https://github.com/biggerV/webpack-lesson/tree/master/lesson16)
-+ [lesson 16 : 小结与回顾](https://github.com/biggerV/webpack-lesson/tree/master/lesson15)
++ [lesson 15 : 使用proxy代理模式以实现跨域API调试](https://github.com/biggerV/webpack-lesson/tree/master/lesson15)
++ [lesson 16 : 小结与回顾](https://github.com/biggerV/webpack-lesson/tree/master/lesson16)
 
 ## 探索
 
