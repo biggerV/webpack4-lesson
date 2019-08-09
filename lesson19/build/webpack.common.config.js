@@ -88,6 +88,8 @@ module.exports = Object.keys(Langs).map(lang => {
       ]
     },
     plugins: [
+      // 暂时去掉CleanWebpackPlugin，因为他会影响到我们多次打包
+      // （现在导出的打包配置是个数组，这个会把上一次打包的内容清除掉，造成我们只能得到一个语言的打包结果）
       // new CleanWebpackPlugin(), // 0配置，插件会自动清除output配置下的path指向的目录
       new HtmlWebpackPlugin({
         title: 'lesson19',
