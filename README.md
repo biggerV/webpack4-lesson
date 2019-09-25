@@ -36,3 +36,4 @@ Let's learn how to use webpack4
 + [lesson 17 : gzip预压缩 -> compression-webpack-plugin](https://github.com/biggerV/webpack-lesson/tree/master/lesson17)
 + [lesson 18 : 打包各阶段耗时统计 -> speed-measure-webpack-plugin](https://github.com/biggerV/webpack-lesson/tree/master/lesson18)
 + [lesson 19 : webpack国际化方案 -> i18n-webpack-plugin](https://github.com/biggerV/webpack-lesson/tree/master/lesson19)
++ [lesson 20 : 让class支持类属性和方法更优雅的写法 -> @babel/plugin-proposal-class-properties](https://github.com/biggerV/webpack-lesson/tree/master/lesson20)
