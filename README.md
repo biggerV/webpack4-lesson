@@ -38,9 +38,7 @@ Let's learn how to use webpack4
 + [lesson 19 : webpack国际化方案 -> i18n-webpack-plugin](https://github.com/biggerV/webpack4-lesson/tree/master/lesson19)
 + [lesson 20 : 让class支持类属性和方法更优雅的写法 -> @babel/plugin-proposal-class-properties](https://github.com/biggerV/webpack4-lesson/tree/master/lesson20)
 
-## 番外
 
-+ [lesson-e1 : webpakc 插件开发解析与实例](https://github.com/biggerV/webpack4-lesson/tree/master/lesson-e1)
 
 
 未完待续
