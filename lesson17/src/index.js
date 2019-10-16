@@ -1,3 +1,4 @@
+// https://github.com/biggerV/webpack4-lesson
 import "core-js/stable"; // 提供垫片 polyfill
 import "regenerator-runtime/runtime"; // 提供 async https://github.com/facebook/regenerator/tree/master/packages/regenerator-runtime
 import 'whatwg-fetch'

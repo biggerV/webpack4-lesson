@@ -65,3 +65,5 @@ CSS文件内：
 但是CSS内使用你应该这样 ~@ 写，而不是直接写 @ , ~这个符号让css-loader不要解析这个资源为 ./@/xxx，而是保持原样@/xx以便webpack去处理这个别名。否则会报错提示css-loader找不到此（./@/xxx）模块，是的，的确是这样。我想这一段才是本文的重点。
 
 我们又向前迈近了一步。
+
+[home](https://github.com/biggerV/webpack4-lesson)

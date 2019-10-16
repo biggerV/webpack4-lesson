@@ -55,3 +55,5 @@ less-loader把less编译为css后，就进入了postcss-loader的处理
 起初我应用less时，打包后less文件内写的内容都被删除了，无法打包进去，后来我意识到，是sideEffects里面没有配置less为副作用文件，所以他被webpack认为无用而被标记并被压缩工具删除了。
 
 我得记得这个配置吖！
+
+[home](https://github.com/biggerV/webpack4-lesson)

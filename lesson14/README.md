@@ -116,3 +116,5 @@ splitChunks: {
 以上设置后打包出来的有四个JS的Chunk：runtime, vendor, app, home，其中runtime, vendor是公共部分，index和home页面只需将它们从服务器拉取一次，后面走浏览器缓存，节省了时间和带宽，同时app和home两个chunk也被瘦身了很多，从118K减到了4K。
 
 上面设置对一般项目已经够用，对大型项目来说，可以更细致的进行切割出更多的chunk。
+
+[home](https://github.com/biggerV/webpack4-lesson)

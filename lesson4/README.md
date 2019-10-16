@@ -59,3 +59,5 @@ plugins: [
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 值得一提的是，plugins里面的插件放置的顺序并没有先后之分，和loader的有些不一样。因为插件内部处理的方式是通过监听webpack的打包生命周期的钩子来处理的。所以，是和Webpack的生命周期有关，和插件放置顺序无关。
+
+[home](https://github.com/biggerV/webpack4-lesson)

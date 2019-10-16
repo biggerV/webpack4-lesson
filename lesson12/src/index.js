@@ -1,3 +1,4 @@
+// https://github.com/biggerV/webpack4-lesson
 import './styles/style.less'
 import './styles/style2.css'
 import avaterUrl from '@/assets/avatar.jpg'

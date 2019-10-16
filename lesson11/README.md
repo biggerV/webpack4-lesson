@@ -97,6 +97,8 @@ const devMod = process.env.NODE_ENV === "development"
 
 这里又添加了一个新的包cross-env，用于命令的跨平台。
 
+[home](https://github.com/biggerV/webpack4-lesson)
+
 
 
 

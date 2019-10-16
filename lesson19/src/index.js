@@ -19,7 +19,9 @@ langsWrap.innerHTML = `
 `
 document.querySelector('#app').appendChild(langsWrap)
 
-// static 
+// https://github.com/biggerV/webpack4-lesson
+
+// static
 // webpack会对__(" ")包裹的以下“静态内容”进行翻译，如果找不到对应内容，则直接输出字符串
 const sayhi = document.createElement('div')
 sayhi.innerHTML = `

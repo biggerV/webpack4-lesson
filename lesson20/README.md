@@ -112,5 +112,5 @@ class SayWhat {
 但是经过我测试，私有属性是可以支持的，私有方法暂不支持！！
 
 
-
+[home](https://github.com/biggerV/webpack4-lesson)
 

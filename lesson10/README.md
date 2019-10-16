@@ -40,3 +40,5 @@ webpack模块化的结构，让它的扩展性非常强，所以有了各种load
 
 ---
 到此，webpack的使用已经走上了一个阶段。接下来我们可以更加深入的玩转webpack啦！
+
+[home](https://github.com/biggerV/webpack4-lesson)

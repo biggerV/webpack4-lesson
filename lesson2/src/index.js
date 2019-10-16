@@ -1,3 +1,4 @@
+// https://github.com/biggerV/webpack4-lesson
 import './styles/style.css'
 
 var a = "hello webpack4!"

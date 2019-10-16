@@ -31,3 +31,5 @@ lesson 11 - 14 主要涉及了优化打包和加载及引入样式预处理工�
 ---
 
 至此webpack4的开发、生产打包配置相对来说比较完善了。常见的开发和生产需求得到满足。后面我们将继续深入webpack4，探究它的更多功能，原理，工程化。
+
+[home](https://github.com/biggerV/webpack4-lesson)

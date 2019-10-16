@@ -59,3 +59,5 @@ webpack.prod.config.js:
 // 上面 MEASURE=true 传入的值true其实是string类型
 const smp = new SpeedMeasurePlugin({ disable: process.env.MEASURE === "false" });
 ```
+
+[home](https://github.com/biggerV/webpack4-lesson)

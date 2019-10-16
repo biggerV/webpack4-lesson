@@ -84,3 +84,5 @@ sideEffects: false
 ---
 
 另外，如果你的项目都是符合ES2015模块定义的，那么就可以直接设置sideEffects: false了，因为没有任何有副作用的模块存在。比如Vue项目的配置中就是这样配置的 [Vue package.json](https://github.com/vuejs/vue/blob/dev/package.json#L15)
+
+[home](https://github.com/biggerV/webpack4-lesson)

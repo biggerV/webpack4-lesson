@@ -27,3 +27,5 @@ css/less 要另外设置了，如下：
 设置后样式不再以style标签插入到head里面，而是插入link文件到head里面。但是现在页面的样式审查时指向的是源文件了！
 
 开发环境使用sourceMap，生产环境不要用！
+
+[home](https://github.com/biggerV/webpack4-lesson)

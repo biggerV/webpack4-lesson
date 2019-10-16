@@ -50,6 +50,8 @@ new webpack.DefinePlugin({
 
 现在我们成功的区分了开发和生产环境，webpack打包配置更加完善了。
 
+[home](https://github.com/biggerV/webpack4-lesson)
+
 
 
 

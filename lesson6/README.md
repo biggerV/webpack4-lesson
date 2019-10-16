@@ -27,3 +27,5 @@ devServer: {
 webpack-dev-server拥有非常多的配置选项，see [文档](https://www.webpackjs.com/configuration/dev-server/)
 
 更多用法后面慢慢加。
+
+[home](https://github.com/biggerV/webpack4-lesson)

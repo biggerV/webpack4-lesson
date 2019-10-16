@@ -39,3 +39,5 @@ if (module.hot) {
 当然，我觉得有必要去了解一下热更新的插件和原理的，有空去看看吧。
 
 后面这里也会补上一些原理说明。
+
+[home](https://github.com/biggerV/webpack4-lesson)

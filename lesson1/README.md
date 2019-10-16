@@ -20,3 +20,5 @@ npm install webpack webpack-cli -D
 在本项目下执行npm run build尝试打包
 
 默认情况下webpack会应用其内置的用于production的配置，所以你看到打包后的文件是经过了压缩和优化的。开发环境下我们可能需要的是未经压缩的方便调试，那么增加一个mode: "development" 或 mode: "none" 即可。
+
+[home](https://github.com/biggerV/webpack4-lesson)
