@@ -7,6 +7,8 @@ Let's learn how to use webpack4
 
 如果有什么地方不对或有更好的建议，留言给我。
 
+![扫码加我微信，拉你入前端群](https://github.com/biggerV/webpack4-lesson/tree/master/wechat-qrcode.jpg)
+
 # 目录
 
 ## 入门
